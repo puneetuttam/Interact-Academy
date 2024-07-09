@@ -1,0 +1,217 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.navbar-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: #00000040;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1000;
+}
+
+.section-style {
+  max-width: 1284px;
+}
+.max-width-conatiner {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.navbar-content-section {
+  max-width: 1284px;
+  width: 100%;
+  display: flex;
+}
+.navbar-content-section > a {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navlink {
+  display: inherit;
+  width: unset;
+}
+
+.navlinks .navlink {
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.117px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #ffffffb3;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+  justify-content: center;
+  position: relative;
+  padding: 0 6px;
+}
+.navbar-content-section .navlinks {
+  position: relative;
+  display: flex;
+  margin-left: 40px;
+  gap: 1rem;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.navlink .active {
+  color: #fff;
+}
+
+.navlink {
+  width: unset;
+}
+.ms-2 {
+  background: rgb(100, 53, 233);
+  margin-left: 0.5rem;
+}
+.badge {
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 400;
+  --bs-badge-color: #fff;
+  --bs-badge-border-radius: 0.5rem;
+  display: inline-block;
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  font-size: var(--bs-badge-font-size);
+  font-weight: var(--bs-badge-font-weight);
+  line-height: 1;
+  color: var(--bs-badge-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--bs-badge-border-radius);
+}
+
+.dropdown {
+  height: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.right-style {
+  z-index: 10000;
+  flex: 1 1 0%;
+  margin-left: 2rem;
+}
+.search-bar-container {
+  display: flex;
+  border-radius: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.07);
+  height: 42.5px;
+  padding: 10px 16px;
+  align-items: center;
+  flex: 1;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.search-bar-container i {
+  font-size: 16px;
+  color: #fff6;
+  flex-shrink: 0;
+}
+
+.search-bar-container input {
+  flex: 1;
+  background: none;
+  color: #fff;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.138px;
+  border: none;
+  margin: 0;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+
+.feed-sigin-style {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+.feed-sigin-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.alpha-feed-icon {
+  width: 42.5px;
+  height: 42.5px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: rgba(60, 32, 140, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fa8922;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.button{
+  transition: background-position 0.25s, background-color 0.45s, color 0.45s;
+}
+.button.navbar-button {
+  color: #000;
+  white-space: nowrap;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 7px 24px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.w-button {
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+.ms-auto {
+  margin-left: 0.5rem;
+}
+@media (min-width: 576px) {
+  .d-sm-flex {
+    display: flex !important;
+  }
+}
+@media (min-width: 576px) {
+  .px-sm-4 {
+      padding-right: 1.5rem !important;
+      padding-left: 1.5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+  }
+}

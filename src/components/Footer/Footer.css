@@ -1,0 +1,127 @@
+.footer-wrapper {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 120px;
+  display: flex;
+  font-family: Outfit;
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-divider p {
+  color: #7d7d7d;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.footer-divider {
+  width: 100%;
+  border-top: 1px solid #2b2b2b;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  display: flex;
+}
+
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
+}
+
+.left {
+  max-width: 300px;
+  grid-row-gap: 18px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.left span {
+  font-size: 1.5rem;
+}
+.left p {
+  color: #7d7d7d;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.footer-link {
+  color: #7d7d7d;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: color 0.475s;
+}
+.right {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.footer-block {
+  grid-row-gap: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.text-white {
+  opacity: 0.75;
+  color: white;
+}
+
+.mid-style {
+  width: 1200px;
+}
+
+.footer-copyright-center {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.text-center {
+  text-align: center;
+}
+
+.social-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-primary {
+  color: rgba(55, 125, 255, 1);
+}
+
+.text-info {
+  color: rgba(9,165,190 1);
+}
+.text-success {
+  color: #01ff01 ;
+}
+.style-icon {
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  margin-right: 0.5rem ;
+  margin-left: 0.5rem 
+}
+.a-style {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.375s;
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

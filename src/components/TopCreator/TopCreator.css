@@ -1,0 +1,105 @@
+.container{
+  margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+.top-creator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .117px;
+  gap: 8px;
+}
+
+
+.main {
+
+  color: var(--White-100, #fff);
+    font-size: 24px;
+    line-height: 30px;
+
+}
+.sub{
+  color: var(--White-40, rgba(255, 255, 255, .4));
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.video-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.video-card-container{
+  width: 283px;
+    height: 420px;
+    border-radius: 16px;
+    border: 1px solid var(--White-20, rgba(255, 255, 255, .2));
+    background: var(--White-05, rgba(255, 255, 255, .05));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-1{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.reel-icon{
+  
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  border: 1px solid var(--White-20, rgba(255, 255, 255, .2));
+  background: var(--Black-40, rgba(0, 0, 0, .4));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer; 
+}
+.card-title{
+    color: #fff9;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .117px;
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    mix-blend-mode: plus-lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    z-index: 2;
+
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+  .container {
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+}
+
